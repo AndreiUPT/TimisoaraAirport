@@ -12,6 +12,8 @@ public class Destinations {
     static JPanel destinationsPanel = new JPanel();
     static JButton back1 = new JButton("Back");
     static JLabel message4 = new JLabel();
+
+    //city dec{
     static JLabel barcelona = new JLabel();
     static JLabel bruxelles = new JLabel();
     static JLabel bucuresti = new JLabel();
@@ -20,8 +22,14 @@ public class Destinations {
     static JLabel dortmund = new JLabel();
     static JLabel iasi = new JLabel();
     static JLabel koln = new JLabel();
+    static JLabel london = new JLabel();
+    static JLabel madrid = new JLabel();
+    static JLabel manchester = new JLabel();
+    static JLabel milano = new JLabel();
+    static JLabel paris = new JLabel();
+  //}
 
-
+    //button dec{
     static JButton monarchBarcelona = new JButton("MONARCH");
     static JButton ryanairBarcelona = new JButton("RYANAIR");
     static JButton wizzairBarcelona = new JButton("WIZZAIR");
@@ -36,7 +44,16 @@ public class Destinations {
     static JButton blueairIasi = new JButton("BLUE AIR");
     static JButton lufthansaKoln = new JButton("LUFTHANSA");
     static JButton wizzairKoln = new JButton("WIZZAIR");
-
+    static JButton monarchLondon = new JButton("MONARCH");
+    static JButton ryanairLondon = new JButton("RYANAIR");
+    static JButton wizzairMadrid = new JButton("WIZZAIR");
+    static JButton monarchManchester = new JButton("MONARCH");
+    static JButton ryanairManchester = new JButton("RYANAIR");
+    static JButton wizzairMilano = new JButton("WIZZAIR");
+    static JButton taromMilano = new JButton("TAROM");
+    static JButton wizzairParis = new JButton("WIZZAIR");
+    static JButton blueairParis = new JButton("BLUE AIR");
+   //}
 
     public void setDestinationsUI() {
         destinationsFrame.setTitle("Traian Vuia Airport-Timisoara");
@@ -106,6 +123,37 @@ public class Destinations {
         koln.setFont(new Font("Serif", Font.BOLD, 31));
         koln.setForeground(Color.black);
         destinationsPanel.add(koln);
+
+        london.setBounds(880, 115, 240, 40);
+        london.setText("London(UK)");
+        london.setFont(new Font("Serif", Font.BOLD, 31));
+        london.setForeground(Color.black);
+        destinationsPanel.add(london);
+
+        madrid.setBounds(880, 195, 240, 40);
+        madrid.setText("Madrid(E)");
+        madrid.setFont(new Font("Serif", Font.BOLD, 31));
+        madrid.setForeground(Color.black);
+        destinationsPanel.add(madrid);
+
+        manchester.setBounds(880, 275, 240, 40);
+        manchester.setText("Manchester(UK)");
+        manchester.setFont(new Font("Serif", Font.BOLD, 31));
+        manchester.setForeground(Color.black);
+        destinationsPanel.add(manchester);
+
+        milano.setBounds(880, 355, 240, 40);
+        milano.setText("Milano(I)");
+        milano.setFont(new Font("Serif", Font.BOLD, 31));
+        milano.setForeground(Color.black);
+        destinationsPanel.add(milano);
+
+        paris.setBounds(880, 435, 240, 40);
+        paris.setText("Paris(F)");
+        paris.setFont(new Font("Serif", Font.BOLD, 31));
+        paris.setForeground(Color.black);
+        destinationsPanel.add(paris);
+
     //}
 
         //buttons{
@@ -158,6 +206,38 @@ public class Destinations {
         wizzairKoln.setBounds(440, 675,140,40);
         wizzairKoln.setFont(new Font("Serif", Font.BOLD, 20));
         destinationsPanel.add(wizzairKoln);
+
+        monarchLondon.setBounds(1080, 115,140,40);
+        monarchLondon.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(monarchLondon);
+        ryanairLondon.setBounds(1220, 115,140,40);
+        ryanairLondon.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(ryanairLondon);
+
+        wizzairMadrid.setBounds(1080, 195,140,40);
+        wizzairMadrid.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(wizzairMadrid);
+
+        monarchManchester.setBounds(1110, 275,140,40);
+        monarchManchester.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(monarchManchester);
+        ryanairManchester.setBounds(1250, 275,140,40);
+        ryanairManchester.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(ryanairManchester);
+
+        wizzairMilano.setBounds(1080, 355,140,40);
+        wizzairMilano.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(wizzairMilano);
+        taromMilano.setBounds(1220, 355,140,40);
+        taromMilano.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(taromMilano);
+
+        wizzairParis.setBounds(1080, 435,140,40);
+        wizzairParis.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(wizzairParis);
+        blueairParis.setBounds(1220, 435,140,40);
+        blueairParis.setFont(new Font("Serif", Font.BOLD, 20));
+        destinationsPanel.add(blueairParis);
 
         //}
 
