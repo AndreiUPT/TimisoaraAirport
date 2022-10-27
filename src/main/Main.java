@@ -1,6 +1,7 @@
 package main;
 
 import ui.Destinations;
+import ui.MonarchTicket;
 import ui.Welcome;
 import ui.WizzairTicket;
 

@@ -328,6 +328,39 @@ public class Destinations {
             }
         });
 
+        MonarchTicket mt = new MonarchTicket();
+
+        monarchBarcelona.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                mt.setMonarchTicket();
+                mt.setBarcelonaTicket2();
+            }
+        });
+
+        monarchLondon.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                mt.setMonarchTicket();
+                mt.setLondonTicket();
+            }
+        });
+
+        monarchManchester.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                mt.setMonarchTicket();
+                mt.setManchesterTicket();
+            }
+        });
+
+
+
+   //---------------------------------
+
         destinationsFrame.setVisible(true);
 
     }
