@@ -252,6 +252,82 @@ public class Destinations {
             }
         });
 
+//----------------------------------ticket actions
+
+        WizzairTicket wt = new WizzairTicket();
+
+        wizzairBarcelona.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setBarcelonaTicket();
+            }
+        });
+
+        wizzairBruxelles.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setBruxellesTicket();
+            }
+        });
+
+        wizzairCagliari.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setCagliariTicket();
+            }
+        });
+
+        wizzairDortmund.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setDortmundTicket();
+            }
+        });
+
+        wizzairKoln.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setKolnTicket();
+            }
+        });
+
+        wizzairMadrid.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setMadridTicket();
+            }
+        });
+
+        wizzairMilano.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setMilanoTicket();
+            }
+        });
+
+        wizzairParis.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                wt.setWizzairTicket();
+                wt.setParisTicket();
+            }
+        });
+
         destinationsFrame.setVisible(true);
 
     }
