@@ -357,6 +357,54 @@ public class Destinations {
             }
         });
 
+        RyanairTicket rt = new RyanairTicket();
+
+        ryanairBarcelona.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                rt.setRyanairTicket();
+                rt.setBarcelonaTicket3();
+            }
+        });
+
+        ryanairLondon.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                rt.setRyanairTicket();
+                rt.setLondonTicket2();
+            }
+        });
+
+        ryanairManchester.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                rt.setRyanairTicket();
+                rt.setManchesterTicket2();
+            }
+        });
+
+        LufthansaTicket lt = new LufthansaTicket();
+
+        lufthansaDortmund.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                lt.setLufthansaTicket();
+                lt.setDortmundTicket2();
+            }
+        });
+
+        lufthansaKoln.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                lt.setLufthansaTicket();
+                lt.setKolnTicket2();
+            }
+        });
 
 
    //---------------------------------
