@@ -406,6 +406,44 @@ public class Destinations {
             }
         });
 
+        TaromTicket tt = new TaromTicket();
+
+        taromBruxelles.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                tt.setTaromTicket();
+                tt.setBruxellesTicket2();
+            }
+        });
+
+        taromBucuresti.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                tt.setTaromTicket();
+                tt.setBucurestiTicket();
+            }
+        });
+
+        taromCluj.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                tt.setTaromTicket();
+                tt.setClujTicket();
+            }
+        });
+
+        taromMilano.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                tt.setTaromTicket();
+                tt.setMilanoTicket2();
+            }
+        });
+
 
    //---------------------------------
 
