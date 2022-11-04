@@ -56,5 +56,4 @@ public class TaromTicket {
         taromPanel.add(milanoTicket2);
     }
 
-
 }

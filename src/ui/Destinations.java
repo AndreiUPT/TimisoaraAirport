@@ -444,6 +444,35 @@ public class Destinations {
             }
         });
 
+        BlueairTicket bt = new BlueairTicket();
+
+        blueairBucuresti.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                bt.setBlueairTicket();
+                bt.setBucurestiTicket2();
+            }
+        });
+
+        blueairIasi.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                bt.setBlueairTicket();
+                bt.setIasiTicket();
+            }
+        });
+
+        blueairParis.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                destinationsFrame.setVisible(false);
+
+                bt.setBlueairTicket();
+                bt.setParisTicket2();
+            }
+        });
+
 
    //---------------------------------
 
