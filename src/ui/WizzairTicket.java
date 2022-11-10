@@ -18,6 +18,9 @@ public class WizzairTicket {
     static JLabel milanoTicket = new JLabel("Milano(I) - BERGAMO");
     static JLabel parisTicket = new JLabel("Paris(F) - BOVEAU");
 
+    static JLabel nameWizzair = new JLabel("NAME:");
+    static JTextField nameTextWizzair = new JTextField();
+
     public void setWizzairTicket(){
         wizzairFrame.setTitle("WIZZAIR Ticket");
         wizzairFrame.setSize(2000,2000);
@@ -26,6 +29,18 @@ public class WizzairTicket {
 
         wizzairPanel.setBackground(white);
         wizzairPanel.setLayout(null);
+
+        nameWizzair.setBounds(180, 140, 550, 100);
+        nameWizzair.setFont(new Font("Serif", Font.BOLD, 34));
+        nameWizzair.setForeground(Color.magenta);
+        wizzairPanel.add(nameWizzair);
+
+        nameTextWizzair.setBounds(300, 161, 350, 60);
+        nameTextWizzair.setFont(new Font("Serif", Font.BOLD, 34));
+        nameTextWizzair.setBackground(magenta);
+        nameTextWizzair.setForeground(white);
+        wizzairPanel.add(nameTextWizzair);
+
 
         wizzairFrame.setVisible(true);
     }
