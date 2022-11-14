@@ -1,10 +1,12 @@
 package ui;
 
 import javax.swing.*;
-
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import static java.awt.Color.*;
+import static java.awt.Color.magenta;
+import static java.awt.Color.white;
 
 public class WizzairTicket {
     static JFrame wizzairFrame = new JFrame();
@@ -93,8 +95,17 @@ public class WizzairTicket {
         wizzairTicketButton.setText("Order your Wizzair Ticket!");
         wizzairTicketButton.setFont(new Font("Serif", Font.BOLD, 21));
         wizzairTicketButton.setBackground(magenta);
-        //wizzairTicketButton.setForeground(white);
         wizzairPanel.add(wizzairTicketButton);
+
+
+        wizzairTicketButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String email = emailTextWizzair.getText();
+
+                JOptionPane.showMessageDialog(null, "Thank you for flying with us!We sent you a confirmation via e-mail:" + email + "!");
+                return;
+            }
+        });
 
 
         wizzairFrame.setVisible(true);
@@ -155,4 +166,7 @@ public class WizzairTicket {
         parisTicket.setForeground(Color.magenta);
         wizzairPanel.add(parisTicket);
     }
+
+
 }
+
