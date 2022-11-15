@@ -91,7 +91,7 @@ public class BlueairTicket {
         blueairTicketButton.setBounds(900, 355, 300, 110 );
         blueairTicketButton.setText("Order your Blueair Ticket!");
         blueairTicketButton.setFont(new Font("Serif", Font.BOLD, 21));
-        blueairTicketButton.setBackground(blue);
+        //blueairTicketButton.setBackground(blue);
         blueairPanel.add(blueairTicketButton);
 
 
